@@ -33,7 +33,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: 22
         script: |
-          cd /root/terrible
+          cd /root/terrible/terribleApp
           source /root/venv/bin/activate
           git pull
           python manage.py migrate
